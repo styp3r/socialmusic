@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#searchBar{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 5rem 0 0 0;
+}
+
+.searchInput{
+  width: 25rem;
+  height: 2rem;
+  border-radius: 5rem;
+  border: solid #595959;
+}
