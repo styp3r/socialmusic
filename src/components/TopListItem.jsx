@@ -13,6 +13,7 @@ function TopListItem(props){
     <div id = {props.id} className = "topListItem" onClick = {handleClick}>
         <div className = "profilePicture"></div>
         <p className = "username">{props.username}</p>
+        <i id = "listenersIcon" class="fas fa-user"> 367</i>
     </div>);
 }
 
