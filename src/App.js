@@ -1,11 +1,11 @@
 import './App.css';
-import SearchBar from './components/SearchBar';
 import TopList from './components/TopList';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
-    <SearchBar />
+    <Navbar />
     <TopList /> 
     </div>
   );
