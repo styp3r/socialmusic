@@ -2,8 +2,7 @@ import './App.css';
 import TopList from './components/TopList';
 import Navbar from './components/Navbar';
 import NotifTray from './components/NotificationTray';
-import Popular from './components/Popular';
-import GoLive from './components/GoLive';
+import HeroSection from './components/HeroSection';
 
 function App() {
   return (
@@ -11,8 +10,7 @@ function App() {
     <NotifTray />
     <div id = "content">
       <Navbar />
-      <Popular />
-      <GoLive />
+      <HeroSection />
       <TopList />
     </div> 
     </div>
