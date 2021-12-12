@@ -15,7 +15,8 @@ code {
 }
 
 .contentBlur{
-  filter: blur(3px);
+  filter: blur(5px);
+  transition-duration: 0.2s;
 }
 
 #navbarContainer{
@@ -247,3 +248,28 @@ code {
   text-align: left;
 }
 
+#streamViewContainer{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  display: none;
+  z-index: 11;
+}
+
+#streamWindow{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#streamView{
+  width: 90%;
+  height: 90%;
+  background-color: #ffffff;
+  border-radius: 1rem;
+}
