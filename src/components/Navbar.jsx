@@ -12,7 +12,7 @@ function Navbar(){
     return(
         <div id = "navbarContainer">
             <SearchBar />
-            <i id = "bellIcon" class="far fa-bell" onClick = {handleClick}></i>
+            <i id = "bellIcon" className="far fa-bell" onClick = {handleClick}></i>
             <div id = "myProfileIcon"></div>
         </div>
     );
