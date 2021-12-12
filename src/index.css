@@ -1,15 +1,21 @@
 body {
   margin: 0;
+  background-color: #f5f5f5;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.contentBlur{
+  filter: blur(3px);
 }
 
 #navbarContainer{
@@ -22,34 +28,40 @@ code {
   display: inline-block;
 }
 
-.searchInput{
-  width: 0;
+#searchInput{
+  width: 20rem;
   height: 2.5rem;
-  margin: 10rem 0 0 11rem;
+  margin: 10rem 0 0 9.5rem;
   border-radius: 5rem;
-  border: solid #bbbbbb;
-  border-width: 2px;
-  padding: 0 1rem 0 1rem;
+  border: none;
+  padding: 0 1rem 0 3rem;
   outline: none;
-  opacity: 0;
+}
+
+#searchInput:focus{
+  border: solid #dedede;
+  border-width: 1px;
+  box-shadow: 0 0 5px 1.5px #dedede;
 }
 
 #searchIcon{
   position: absolute;
-  top: 10.5rem;
-  left: 9rem;
+  top: 10.65rem;
+  left: 10.3rem;
   font-size: 1.3rem;
   color: #a1a1a1;
   display: inline-block;
+  opacity: 0.5;
 }
 
 #bellIcon{
   position: absolute;
-  right: 13rem;
+  right: 14rem;
   top: 9.8rem;
   font-size: 1.5rem;
   color: #8a8a8a;
   display: inline-block;
+  cursor: pointer;
 }
 
 .searchInput:focus{
@@ -57,7 +69,7 @@ code {
 }
 
 #topListContainer{
-  margin: 5rem;
+  margin: 10rem 5rem 5rem 5rem;
 }
 
 .topListItem{
@@ -66,25 +78,25 @@ code {
   display: inline-block;
   margin: 2rem;
   background-color: #ffffff;
-  border: solid #8a8a8a;
   border-width: 1px;
   border-radius: 1rem;
+  cursor: pointer;
 }
 
 .topListItem:hover{
-  background-color: #f0f0f0;
+  background-color: #dcdcdc;
+  transition-duration: 0.3s;
 }
 
 .profilePicture{
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 2rem;
   width: 4rem;
   height: 4rem;
   margin: 1rem 0 0 0;
   border-radius: 100%;
   background-color: #ffffff;
-  border: solid #8a8a8a;
+  border: solid #e7e7e7;
   border-width: 2px;
 }
 
@@ -94,15 +106,80 @@ code {
 
 #myProfileIcon{
   position: absolute;
-  right: 9rem;
+  right: 9.5rem;
   top: 9.5rem;
   width: 2rem;
   height: 2rem;
   background-color: aqua;
   border-radius: 100%;
+  cursor: pointer;
 }
 
 #listenersIcon{
   margin: 1rem 0 0 0;
   color: #b8b8b8;
+  font-size: 0.85rem;
 }
+
+#notifTray{
+  position: fixed;
+  right: -40rem;
+  width: 30rem;
+  height: 100%;
+  border-left: solid #e6e6e6;
+  border-width: 1px;
+  background-color: #ffffff;
+  z-index: 10;
+}
+
+.notifTrayAppear{
+  animation: 0.5s notifTrayAppear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes notifTrayAppear{
+  0%{
+    right: -40rem;
+  }
+  100%{
+    right: 0;
+  }
+}
+
+.notifTrayDisappear{
+  animation: 0.5s notifTrayDisappear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes notifTrayDisappear{
+  0%{
+    right: 0;
+  }
+  100%{
+    right: -40rem;
+  }
+}
+
+#popularSection{
+  position: relative;
+  display: inline-block;
+  top: 5rem;
+  left: 0.5rem;
+  width: 50rem;
+  height: 20rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+}
+
+#goLiveSection{
+  position: relative;
+  display: inline-block;
+  margin: 0 0 0 2rem;
+  top: 5rem;
+  right: 0.5rem;
+  width: 25rem;
+  height: 20rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+}
+
