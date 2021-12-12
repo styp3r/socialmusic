@@ -2,18 +2,17 @@ import React from 'react';
 
 function TopListItem(props){
 
-    let unique = props.id;
-
-    function handleClick(){
+    function handleUserClick(){
         //open new page with the corresponding user's details
-        document.getElementById(unique).style.backgroundColor = "red";
+        //document.getElementById(props.id).style.backgroundColor = "red";
+        
     }
 
     return (
-    <div id = {props.id} className = "topListItem" onClick = {handleClick}>
+    <div id = {props.id} className = "topListItem" onClick = {handleUserClick}>
         <div className = "profilePicture"></div>
         <p className = "username">{props.username}</p>
-        <i id = "listenersIcon" class="fas fa-user"> 367</i>
+        <i id = "listenersIcon" className="fas fa-user"> 367</i>
     </div>);
 }
 
