@@ -5,7 +5,9 @@ function TopListItem(props){
     function handleUserClick(){
         //open new page with the corresponding user's details
         //document.getElementById(props.id).style.backgroundColor = "red";
-        
+        document.getElementById("streamViewContainer").style.display = "block";
+        document.getElementById("content").className = "contentBlur";
+        document.getElementById("notifTray").className = "";
     }
 
     return (
