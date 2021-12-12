@@ -2,9 +2,9 @@ import React from 'react';
 
 function GoLive(){
     return (
-        <div id = "goLiveSection">
-            
-        </div>
+        <div id = "goLive">
+                <div id = "goLiveOptions"></div>
+            </div>
     );
 }
 
