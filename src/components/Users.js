@@ -38,7 +38,7 @@ const users = [
     {
         id: 9,
         name: "User9"
-    },
+    }
 ];
 
 export default users;
