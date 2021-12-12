@@ -4,7 +4,7 @@ function SearchBar(){
 
     return (
     <div id = "searchBar">
-        <i id = "searchIcon" class="fas fa-search"></i>
+        <i id = "searchIcon" className="fas fa-search"></i>
         <input id = "searchInput" placeholder = "Search"/>
     </div>);
 }
