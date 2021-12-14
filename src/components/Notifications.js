@@ -1,6 +1,6 @@
 const notifs = [
     {
-        id: "n1",
+        id: "n0",
         content: "yooooo"
     },
     {
